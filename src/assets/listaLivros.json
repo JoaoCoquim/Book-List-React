@@ -1,14 +1,14 @@
 [
     {
         "id": 1,
-        "titulo": "Dom Casmurro",
-        "autor": "Machado de Assis",
-        "ano": 1899
+        "titulo": "The Legend of Zelda: Hyrule Historia",
+        "autor": "Nintendo",
+        "ano": 2011
     },
     {
         "id": 2,
-        "titulo": "Memórias Póstumas de Brás Cubas",
-        "autor": "Machado de Assis",
-        "ano": 1881
+        "titulo": "Console Wars: Sega, Nintendo, and the Battle that Defined a Generation",
+        "autor": "Blake J. Harris",
+        "ano": 2014
     }
 ]

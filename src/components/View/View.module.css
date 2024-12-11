@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin: 10px;
+}
+
+.editBtn {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 150px;
+    margin: 5px;
+}
+
+.editBtn:hover {
+    background-color: white;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.returnBtn {
+    background-color: orangered;
+    color: #fff;
+    border: 1px solid orangered;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.returnBtn:hover {
+    background-color: white;
+    color: orangered;
+    border: 1px solid orangered;
+}

@@ -1,5 +1,6 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import styles from './Create.module.css'
 
 function Create({ livros, setLivros }) {
 
@@ -31,10 +32,10 @@ function Create({ livros, setLivros }) {
 
     return (
         <div>
-            <h1>Criar Novo Livro</h1>
+            <h1>Create New Book</h1>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label>Título: </label>
+                    <label>Title: </label>
                     <input
                         type="text"
                         value={titulo}
@@ -52,7 +53,7 @@ function Create({ livros, setLivros }) {
                     />
                 </div>
                 <div>
-                    <label>Ano: </label>
+                    <label>Year: </label>
                     <input
                         type="number"
                         value={ano}
@@ -60,7 +61,7 @@ function Create({ livros, setLivros }) {
                         required
                     />
                 </div>
-                <button type="submit">Salvar</button>
+                <button type="submit" className={styles.saveBtn}>Save</button>
             </form>
         </div>
     )

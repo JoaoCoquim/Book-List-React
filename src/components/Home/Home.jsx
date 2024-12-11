@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import styles from './Home.module.css'
 
 function Home({ livros, setLivros }) {
 
@@ -10,8 +11,8 @@ function Home({ livros, setLivros }) {
 
     return (
         <div>
-            <h1>Lista de Livros</h1>
-            <Link to="/create">Adicionar Novo Livro</Link>
+            <h1>Book List</h1>
+            <Link to="/create" className={styles.addBtn}>Add New Book</Link>
             <ul>
                 {livros.map(livro => (
                     <li key={livro.id}>
@@ -20,9 +21,9 @@ function Home({ livros, setLivros }) {
                             {livro.titulo} - {livro.autor} ({livro.ano})
                         </Link>
                         {" | "}
-                        <Link to={`/edit/${livro.id}`}>Editar</Link>
+                        <Link to={`/edit/${livro.id}`} className={styles.editBtn}>Edit</Link>
                         {" | "}
-                        <button onClick={() => handleDelete(livro.id)}>Excluir</button>
+                        <button className={styles.deleteBtn} onClick={() => handleDelete(livro.id)}>Delete</button>
                     </li>
                 ))}
             </ul>

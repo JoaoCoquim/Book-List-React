@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
+import styles from './Edit.module.css'
 
 function Edit({ livros, setLivros }) {
   const { id } = useParams();
@@ -22,7 +23,7 @@ function Edit({ livros, setLivros }) {
   }, [livro]);
 
   if (!livro) {
-    return <div>Livro não encontrado. <Link to="/">Voltar</Link></div>;
+    return <div>Book not found. <Link to="/">Return</Link></div>;
   }
 
   const handleSubmit = (e) => {
@@ -44,7 +45,7 @@ function Edit({ livros, setLivros }) {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <h1>Editar Livro</h1>
       <form onSubmit={handleSubmit}>
         <div>
@@ -74,9 +75,9 @@ function Edit({ livros, setLivros }) {
             required
           />
         </div>
-        <button type="submit">Salvar Alterações</button>
+        <button type="submit" className={styles.saveBtn}>Save Changes</button>
       </form>
-      <Link to="/">Voltar</Link>
+      <Link to="/" className={styles.returnBtn}>Return</Link>
     </div>
   );
 }

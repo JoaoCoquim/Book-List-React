@@ -1,0 +1,34 @@
+input {
+    margin: 2px;
+    width: 300px;
+}
+
+.saveBtn {
+    background-color: green;
+    color: #fff;
+    border: 1px solid green;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 150px;
+    margin: 12px;
+}
+
+.saveBtn:hover {
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+}
+
+.returnBtn {
+    background-color: orangered;
+    color: #fff;
+    border: 1px solid orangered;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.returnBtn:hover {
+    background-color: white;
+    color: orangered;
+    border: 1px solid orangered;
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import {useParams, Link } from 'react-router-dom'
+import styles from './View.module.css'
 
 function View({ livros }) {
 
@@ -11,12 +12,13 @@ function View({ livros }) {
       }
       
     return (
-        <div>
-            <h1>Detalhes do Livro</h1>
-            <p><strong>Título:</strong> {livro.titulo}</p>
+        <div className={styles.container}>
+            <h1>Book Details</h1>
+            <p><strong>Title:</strong> {livro.titulo}</p>
             <p><strong>Autor:</strong> {livro.autor}</p>
-            <p><strong>Ano:</strong> {livro.ano}</p>
-            <Link to="/">Voltar para Lista</Link>
+            <p><strong>Year:</strong> {livro.ano}</p>
+            <Link to={`/edit/${livro.id}`} className={styles.editBtn}>Edit</Link>
+            <Link to="/" className={styles.returnBtn}>Return To List</Link>
         </div>
     )
 }

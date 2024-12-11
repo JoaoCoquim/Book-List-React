@@ -1,0 +1,51 @@
+ul li {
+    list-style: none;
+    margin: 5px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.addBtn {
+    background-color: green;
+    color: #fff;
+    border: 1px solid green;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addBtn:hover {
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+}
+
+.editBtn {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.editBtn:hover {
+    background-color: white;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.deleteBtn {
+    background-color: red;
+    color: #fff;
+    border: 1px solid red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.deleteBtn:hover {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}
